@@ -1,5 +1,7 @@
 require 'rails_helper'
 
+
+
 feature 'restaurants' do
 
 	context 'creating restaurants' do
