@@ -34,10 +34,5 @@ ActiveRecord::Schema.define(version: 20151124140348) do
 
   add_index "reviews", ["restaurant_id"], name: "index_reviews_on_restaurant_id", using: :btree
 
-  create_table "students", id: false, force: :cascade do |t|
-    t.integer "id"
-    t.string  "name"
-  end
-
   add_foreign_key "reviews", "restaurants"
 end
